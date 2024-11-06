@@ -1,0 +1,322 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+@font-face {
+    font-family: gilB;
+    src: url('../font/Gilroy-ExtraBold.otf');
+}
+
+@font-face {
+    font-family: gilL;
+    src: url('../font/Gilroy-Light.otf');
+}
+
+.service_header{
+    width: 100%;
+    height: 56vh;
+    background-image: url('../img/NewService/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 17%;
+    padding-left: 7%;
+}
+.service_header > h1{
+    font-family: extra;
+    font-size: 4.8rem;
+  
+}
+.page{
+    width: 100%;
+    padding: 20px 100px;
+    min-height: 100vh;
+    background-color: #fff;
+}
+.page1 > .integration_heading{
+ width: 40%;
+ height: fit-content;
+}
+.page1 > .integration_heading > h1{
+  color: #000;
+    font-family: gilB;
+    font-size: 4.8rem;
+    font-weight: 900;
+    margin-left: 30px;
+}
+
+.integration_container{
+    margin-top: 47px;
+    display: flex;
+}
+
+.page1 .integration_container .left_container{
+    width: 50%;
+    height: 60vh;
+    padding: 20px 30px;
+    /* background-color: green; */
+    overflow-y: auto;
+    scrollbar-width: thin;
+}
+
+
+.page1 .integration_container .left_container::-webkit-scrollbar-thumb{
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+
+}
+
+
+.page1 .integration_container .right_container{
+    width: 50%;
+    height: 60vh;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.integration_container .right_container .right_container_img > img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  
+}
+.integration_container .right_container .right_container_img{
+    width: 300px;
+    height: 300px;
+    /* box-shadow: 0px 10px 50px #c8c8c89d; */
+    /* background-color: red; */
+}
+.page1 .integration_container .left_container > p{
+     text-align: justify; 
+     color: #000;
+}
+.page1 .integration_container .left_container > h3{
+    font-weight: 700;
+    font-family: gilL;
+    font-size: 2em;
+    color: #000;
+}
+.page1 .integration_container .left_container > h2{
+    font-family: gilL;
+    font-weight: 700;
+    font-size: 2.1em;
+    color: #000;
+}
+.filters-content .grid {
+    margin-left: 4% !important;
+}
+
+.Salesforce_Clouds .content {
+    display: none;
+    margin-top: 10px;
+    padding: 22px;
+    border: 1px dashed #ccc;
+  }
+  .Salesforce_Clouds  .active {
+    display: block;
+  }
+  .Salesforce_Clouds .container .buttons {
+    position: relative;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 60px 30px;
+  }
+  
+
+  
+  .Salesforce_Clouds .container .buttons > button {
+    border: none;
+    padding: 10px 20px;
+    background-color: #e3e3e3;
+    color:#000;
+    border-radius: 5px;
+    overflow: hidden;
+    font-family: extra;
+  }
+
+  .buttons > button{
+    position:relative;
+   
+    
+  }
+  .buttons > button::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #02bfb637;
+    left: 0%;
+    bottom: -100%;
+    border-radius: 25px;
+    transition: all 0.2s ease;
+  }
+
+  .buttons > button:hover::before{
+      bottom: 0%;
+      border-radius: 0;
+  }
+
+  &::before{
+    border: none !important;
+  }
+
+  
+
+
+  .Salesforce_Clouds   .active-btn {
+    color: #fff !important;
+    background-color:  #02bfb6 !important;
+  }
+
+
+  /* card */
+
+  .Salesforce_Clouds  .content_main {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .Salesforce_Clouds   h1 {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .Salesforce_Clouds  img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+  }
+
+  .Salesforce_Clouds  .btn {
+    color: #ffffff;
+    padding: 0.8rem;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    font-weight: 400;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: transparent;
+  }
+
+  .Salesforce_Clouds   .btn:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+  }
+
+  .Salesforce_Clouds  .cards {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+  }
+
+  .Salesforce_Clouds  .cards_item {
+    display: flex;
+    padding: 1rem;
+  }
+ 
+/* 
+  @media (min-width: 40rem) {
+    .cards_item {
+      width: 30%;
+    }
+  }
+
+  @media (min-width: 56rem) {
+    .cards_item {
+      width: 30.3333%;
+    }
+  } */
+
+  .Salesforce_Clouds  .card {
+    /* background-color: white; */
+    /* border-radius: 0.25rem; */
+    /* box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25); */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    /* border: 1px solid #000; */
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .Salesforce_Clouds   .card_content {
+    padding: 1rem;
+    /* background: linear-gradient(to bottom left, #ef8d9c 40%, #ffc39e 100%); */
+  }
+
+  .Salesforce_Clouds   .card_title {
+    /* color: #ffffff; */
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin: 0px;
+    font-family: gilL;
+    margin-top: 5px;
+  }
+
+  .Salesforce_Clouds   .card_text {
+    color: #ffffff;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
+    font-weight: 400;
+  }
+  .Salesforce_Clouds  .made_by {
+    font-weight: 400;
+    font-size: 13px;
+    margin-top: 35px;
+    text-align: center;
+  }
+  .Salesforce_Clouds  .card_icon{
+
+    padding: 20px 20px;
+    border: 2.5px solid #02bfb6 ;
+    border-radius: 50%;
+    color: #fff;
+   
+  }
+  .Salesforce_Clouds  .card:hover .card_icon{
+    /* color:#9875E4 !important ; */
+    border: 2.5px solid #9875E4 !important ;
+  }
+  .Salesforce_Clouds  .card_icon > i{
+    font-size: 3rem;
+    text-align: center;
+  }
+
+/* animation */
+
+.rotate-animation{
+  transform-origin: center;
+  transform-style: preserve-3d;
+  animation: rotate-animation 2.5s ease infinite;
+}
+
+
+
+@keyframes rotate-animation {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
